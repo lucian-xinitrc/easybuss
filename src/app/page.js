@@ -254,8 +254,8 @@ export default function Home() {
         </h1>
       </div>
 
-     <div className="mt-10 mx-[50px] overflow-x-auto">
-      <div className="flex gap-4 whitespace-nowrap">
+     <div className="mt-10 mx-[50px] overflow-x-auto no-scrollbar">
+      <div className="flex gap-4 whitespace-nowrap ">
         {linii.map((linie) => (
           <button
             key={linie.id}
@@ -280,7 +280,7 @@ export default function Home() {
               {linieSelectata.program.tur.destinatie}
             </h1>
 
-            <div className="h-[200px] overflow-y-auto mx-10 mt-5">
+            <div className="h-[200px] overflow-y-auto mx-10 mt-5 no-scrollbar">
               {linieSelectata.program.tur.ore.map((ora) => (
                 <p key={ora} className="p-5 font-bold">{ora}</p>
               ))}
@@ -291,7 +291,7 @@ export default function Home() {
               {linieSelectata.program.retur.destinatie}
             </h1>
 
-            <div className="h-[150px] overflow-y-auto mx-10 mt-5">
+            <div className="h-[150px] overflow-y-auto mx-10 mt-5 no-scrollbar">
               {linieSelectata.program.retur.ore.map((ora) => (
                 <p key={ora} className="p-5 font-bold">{ora}</p>
               ))}

@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .fancy-scrollbar::-webkit-scrollbar {
+      width: 8px; /* lățimea barei */
+    }
+
+    .fancy-scrollbar::-webkit-scrollbar-track {
+      background: black; /* fundal */
+    }
+
+    .fancy-scrollbar::-webkit-scrollbar-thumb {
+      background-color: white; /* bara efectivă */
+      border-radius: 15px;
+      border: 5px solid black; /* spațiu între thumb și track */
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
