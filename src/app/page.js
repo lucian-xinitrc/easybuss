@@ -9,7 +9,7 @@ export default function Home() {
     {
       id: "M16",
       titlu: "M16",
-      link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+      link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=62",
       program: {
         tur: {
           destinatie: "Ciurila",
@@ -40,7 +40,7 @@ export default function Home() {
     {
         id: "24B",
         titlu: "24B",
-        link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+        link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=13",
         program: {
           tur: {
             destinatie: "VIVO! Cluj-Napoca",
@@ -83,7 +83,7 @@ export default function Home() {
       {
   id: "M21",
   titlu: "M21",
-  link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+  link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=63",
   program: {
     tur: {
       destinatie: "Florești Cetate",
@@ -125,7 +125,7 @@ export default function Home() {
     {
   id: "M26",
   titlu: "M26",
-  link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+  link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=92",
   program: {
     tur: {
       destinatie: "Florești Cetate",
@@ -164,7 +164,7 @@ export default function Home() {
     {
   id: "30",
   titlu: "30",
-  link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+  link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=23",
   program: {
     tur: {
       destinatie: "Str. Aurel Vlaicu",
@@ -215,7 +215,7 @@ export default function Home() {
 {
   id: "43P",
   titlu: "43P",
-  link: "https://apps.tranzy.ai/map/ctp-cj-ro",
+  link: "https://apps.tranzy.ai/map/ctp-cj-ro?routeId=43",
   program: {
     tur: {
       destinatie: "VIVO! Cluj-Napoca",
@@ -296,14 +296,7 @@ export default function Home() {
                 <p key={ora} className="p-5 font-bold">{ora}</p>
               ))}
             </div>
-
-            <a
-              href={linieSelectata.link}
-              target="_blank"
-              className="inline-block mt-5 bg-blue-700 text-white px-5 py-3 rounded-xl"
-            >
-              Map
-            </a>
+            <iframe className="rounded-lg mt-10" src={linieSelectata.link} height="400" width="100%" title="Iframe Example"></iframe>
 
           </div>
         </div>
