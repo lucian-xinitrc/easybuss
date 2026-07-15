@@ -249,7 +249,7 @@ export default function Home() {
   return (
     <section className="sm:h-screen h-full dark:bg-black">
       <div className="w-full p-5">
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-2xl text-center mt-10 font-bold">
           Easy Bussy
         </h1>
       </div>
