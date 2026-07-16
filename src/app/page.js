@@ -146,7 +146,7 @@ export default function Home() {
       ],
     },
     retur: {
-      destinatie: "Cluj-Napoca",
+      destinatie: "Florești Cetate",
       ore: [
         "04:45", "05:00", "05:10", "05:30", "05:40", "05:50",
         "06:00", "06:10", "06:20", "06:30", "06:40", "06:50",
